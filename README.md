@@ -8,9 +8,9 @@
 - github 프로젝트 zip 파일 다운로드 - https://github.com/drhot552/nice 다운로드
 
 - 프로젝트 압축해제 
-- 압축해제한 프로젝트 경로 ~/subject/gradlew build 실행
+- 압축해제한 프로젝트 경로 ~/nice-master/gradlew build 실행
   ### ex) ./gradlew build
-- ~/subject/build/libs/subject-0.0.1-SNAPSHOT.jar 파일 생성확인 후 실행
+- ~/nice-master/build/libs/subject-0.0.1-SNAPSHOT.jar 파일 생성확인 후 실행
   ### ex) ./java -jar subject-0.0.1-SNAPSHOT.jar
   
 ## API 명세서 확인
