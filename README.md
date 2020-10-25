@@ -9,11 +9,9 @@
 
 - 프로젝트 압축해제 
 - 압축해제한 프로젝트 경로 ~/subject/gradlew build 실행
-
-  ex) ./gradlew build
+  ### ex) ./gradlew build
 - ~/subject/build/libs/subject-0.0.1-SNAPSHOT.jar 파일 생성확인 후 실행
-
-  ex) ./java -jar subject-0.0.1-SNAPSHOT.jar
+  ### ex) ./java -jar subject-0.0.1-SNAPSHOT.jar
   
 ## API 명세서 확인
 - 프로젝트 실행후 http://localhost:8080/v1/train/api 로 접속 후 확인
