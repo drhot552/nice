@@ -16,10 +16,10 @@
 2. 프로젝트 압축해제 
 
 3. 압축해제한 프로젝트 경로 ~/nice-master/gradlew build 실행
-  ### ./gradlew build
+    ### ./gradlew build
   
 4. 3번을 실행하면 ~/nice-master/build/libs/subject-0.0.1-SNAPSHOT.jar 파일이 생성 됨. 확인 후 실행
-  ### java -jar subject-0.0.1-SNAPSHOT.jar
+    ### java -jar subject-0.0.1-SNAPSHOT.jar   
   
 ## API 명세서 확인
 -    프로젝트 실행후 http://localhost:8080/v1/train/api 로 접속 후 확인
