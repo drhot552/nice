@@ -8,6 +8,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @Service
@@ -20,12 +21,12 @@ public class TrainService {
     // loadfile
     public void loadfile() throws IOException {
 
-        File file =  new ClassPathResource("file.csv").getFile();
-        BufferedReader bufReader  =  new BufferedReader(new InputStreamReader(new FileInputStream(file),"euc-kr"));
+        ClassPathResource resource =  new ClassPathResource("file.csv");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(resource.getInputStream(), "euc-kr"));
         String line = "";
         trainRepository.trainAlldelete();
-        bufReader.readLine();
-        while((line = bufReader.readLine()) != null){
+        bufferedReader.readLine();
+        while((line = bufferedReader.readLine()) != null){
             SeoulTrain train = new SeoulTrain();
             //csv , 구분자로 나누어서 객체에 저장 후 DB에 저장 (단 "로 묶여있는 숫자는 제외)
             String[] array = line.split(",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)");
@@ -69,7 +70,7 @@ public class TrainService {
             trainRepository.traininsert(train);
 
         }
-        bufReader.close();
+        bufferedReader.close();
 
     }
     public String traintopten() {
