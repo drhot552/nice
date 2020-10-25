@@ -4,7 +4,8 @@
 3. 개발주제 : 서울교통공사 승하차 순위 데이터 적재 및 조회용API 개발
 
 ## Framework 정보
-- SpringFrameWork 2.4
+- SpringBootFrameWork 2.3.4
+- Gradle Project
 - jdk 11
 - mysql 5.6.44 (aws) 
 
