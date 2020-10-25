@@ -3,6 +3,11 @@
 2. 지원분야 : [서비스 운영] IT서비스 개발 
 3. 개발주제 : 서울교통공사 승하차 순위 데이터 적재 및 조회용API 개발
 
+## Framework 정보
+- SpringFrameWork 2.4
+- jdk 11
+- mysql 5.6.44 (aws) 
+
 ## 프로젝트 실행 방법
 
 - github 프로젝트 zip 파일 다운로드 - https://github.com/drhot552/nice 다운로드
