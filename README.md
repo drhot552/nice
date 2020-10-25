@@ -16,7 +16,7 @@
 #### 2. 프로젝트 압축해제 
 
 #### 3. 압축해제한 프로젝트 경로 ~/nice-master/gradlew build 실행
-  #### ./gradlew build
+  ### ./gradlew build
   
 #### 4. 3번을 실행하면 ~/nice-master/build/libs/subject-0.0.1-SNAPSHOT.jar 파일이 생성 됨. 확인 후 실행
   ### java -jar subject-0.0.1-SNAPSHOT.jar
