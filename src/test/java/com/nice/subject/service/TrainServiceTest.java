@@ -24,7 +24,6 @@ class TrainServiceTest {
     TrainRepository trainRepository;
 
     @Test
-    @Rollback(value = false)
     public void loadfile() throws Exception {
         trainService.loadfile();
     }
