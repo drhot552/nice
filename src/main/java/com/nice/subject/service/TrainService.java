@@ -1,6 +1,5 @@
 package com.nice.subject.service;
 
-import com.nice.subject.domain.ResponseDTO;
 import com.nice.subject.domain.SeoulTrain;
 import com.nice.subject.repository.TrainRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +7,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 @Service
 public class TrainService {

@@ -1,7 +1,6 @@
 package com.nice.subject.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nice.subject.domain.ResponseDTO;
 import com.nice.subject.domain.SeoulTrain;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +11,6 @@ import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Repository
 public class TrainRepository {
