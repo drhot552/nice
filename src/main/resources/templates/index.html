@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<body>
+<div>
+    <div>
+        <div>
+            <div style="margin-left: 15px;font-size: 1.5em;font-weight: 700;">
+                API 명세서
+            </div>
+            <div>
+                <ul>
+                    <li style="font-size: 1.2em;font-weight: 700;">
+                        File DB에 입력하기
+                    </li>
+                    <div style="margin: 15px;">
+                        1. Request
+                        <div style="margin: 15px;">
+                            URL : GET /v1/train/insert <br>
+                            Host : http://localhost:8080
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        2. Response
+                        <div  style="margin: 15px;">
+                            <table style="border: 1px solid black">
+                                <thead>
+                                <tr>
+                                    <th style="padding: 14px 20px;"> Name </th>
+                                    <th style="padding: 14px 20px;"> Type </th>
+                                    <th style="padding: 14px 20px;"> Descript</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        code
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        File -> DB 입력의 성공여부 코드 값 (성공:Succes, 실패: Error)
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        3. Sample
+                        <div style="margin: 15px;">
+                            HTTP/1.1 200 OK <br>
+                            Content-Type: application/json:charset=UTF-8 <br>
+                            { <br>
+                            "code" : "success" <br>
+                            } <br>
+                        </div>
+                    </div>
+                    <li style="font-size: 1.2em;font-weight: 700;">
+                        일평균 인원이 가장 많은 상위 10개의 역명과 인원수를 출력하는 API
+                    </li>
+                    <div style="margin: 15px;">
+                        1. Request
+                        <div style="margin: 15px;">
+                            URL : GET /v1/train/topten <br>
+                            Host : http://localhost:8080
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        2. Response
+                        <div style="margin: 15px;">
+                            <table style="border: 1px solid black">
+                                <thead>
+                                <tr>
+                                    <th style="padding: 14px 20px;"> Name </th>
+                                    <th style="padding: 14px 20px;"> Type </th>
+                                    <th style="padding: 14px 20px;"> Descript</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        train_name
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        상위 10개 역명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        cnt
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        일 평균 인원 수
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        3. Sample
+                        <div style="margin: 15px;">
+                            HTTP/1.1 200 OK <br>
+                            Content-Type: application/json:charset=UTF-8 <br>
+                            { <br>
+                            "train_name" : "걍남", <br>
+                            "cnt" : 202174 <br>
+                            } ...<br>
+                        </div>
+                    </div>
+                    <li style="font-size: 1.2em;font-weight: 700;">
+                        월 인원수 평균이 가장 낮은 역 명과 인원수를 출력하는 API
+                    </li>
+                    <div style="margin: 15px;">
+                        1. Request
+                        <div style="margin: 15px;">
+                            URL : GET /v1/train/lowlist <br>
+                            Host : http://localhost:8080
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        2. Response
+                        <div style="margin: 15px;">
+                            <table style="border: 1px solid black">
+                                <thead>
+                                <tr>
+                                    <th style="padding: 14px 20px;"> Name </th>
+                                    <th style="padding: 14px 20px;"> Type </th>
+                                    <th style="padding: 14px 20px;"> Descript</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        train_name
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        가장 낮은 역명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        cnt
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        월 평균 인원 수
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        3. Sample
+                        <div style="margin: 15px;">
+                            HTTP/1.1 200 OK <br>
+                            Content-Type: application/json:charset=UTF-8 <br>
+                                { <br>
+                            "train_name" : "둔촌오륜", <br>
+                            "cnt" : 38809 <br>
+                            } ...<br>
+                        </div>
+                    </div>
+                    <li style="font-size: 1.2em;font-weight: 700;">
+                        월 인원수 최대 최소의 차이가 가장 큰 역 명을 출력하는 API
+                    </li>
+                    <div style="margin: 15px;">
+                        1. Request
+                        <div style="margin: 15px;">
+                            URL : GET /v1/train/difflist <br>
+                            Host : http://localhost:8080
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        2. Response
+                        <div style="margin: 15px;">
+                            <table style="border: 1px solid black">
+                                <thead>
+                                <tr>
+                                    <th style="padding: 14px 20px;"> Name </th>
+                                    <th style="padding: 14px 20px;"> Type </th>
+                                    <th style="padding: 14px 20px;"> Descript</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        train_name
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        월 인원수 최대 최소 차이가 큰 역 명
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        cnt
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        String
+                                    </td>
+                                    <td style="padding: 14px 20px;">
+                                        월 인원수 최대 최소 차이 수
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="margin: 15px;">
+                        3. Sample
+                        <div style="margin: 15px;">
+                            HTTP/1.1 200 OK <br>
+                            Content-Type: application/json:charset=UTF-8 <br>
+                            { <br>
+                            "train_name" : "강남", <br>
+                            "cnt" : 1350567 <br>
+                            } ...<br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

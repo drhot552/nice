@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://luxurydb.ceuzzas6aewi.ap-northeast-2.rds.amazonaws.com:3306/luxury?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Seoul
+    username: root
+    password: alswo5293
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update # 없으면 만들고 있으면 그대로 사용
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate: # custom options
+        format_sql: false # sql 로그를 포매팅해서 보여줌
+
+
+
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+
+
