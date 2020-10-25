@@ -24,11 +24,6 @@ class TrainServiceTest {
     TrainRepository trainRepository;
 
     @Test
-    public void loadfile() throws Exception {
-        trainService.loadfile();
-    }
-
-    @Test
     public void topten() {
         trainService.traintopten();
     }
