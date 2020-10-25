@@ -6,7 +6,7 @@
 ## Framework 정보
 - SpringBootFrameWork 2.3.4
 - Gradle Project
-- jdk 11
+- java 11
 - mysql 5.6.44 (aws) 
 
 ## 프로젝트 실행 방법
