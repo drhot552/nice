@@ -11,12 +11,14 @@
 
 ## 프로젝트 실행 방법
 
-- github 프로젝트 zip 파일 다운로드 - https://github.com/drhot552/nice 다운로드
+1. github 프로젝트 zip 파일 다운로드 - https://github.com/drhot552/nice 다운로드
 
-- 프로젝트 압축해제 
-- 압축해제한 프로젝트 경로 ~/nice-master/gradlew build 실행
+2. 프로젝트 압축해제 
+
+3. 압축해제한 프로젝트 경로 ~/nice-master/gradlew build 실행
   ### ./gradlew build
-- ~/nice-master/build/libs/subject-0.0.1-SNAPSHOT.jar 파일 생성확인 후 실행
+  
+4. 3번을 실행하면 ~/nice-master/build/libs/subject-0.0.1-SNAPSHOT.jar 파일이 생성 됨. 확인 후 실행
   ### java -jar subject-0.0.1-SNAPSHOT.jar
   
 ## API 명세서 확인
